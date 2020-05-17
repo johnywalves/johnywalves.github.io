@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Johny W. Alves</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        html {
+            --bgColor: #fafafa;
+            --textStrong: #d23669;
+            --textColor: #6c6c6c;
+        }
+
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            text-align: center;
+            height: 100vh;
+            background-color: var(--bgColor);
+        }
+
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            border-radius: 50%;
+            -webkit-box-shadow: 5px 5px 13px -6px var(--textColor);
+            -moz-box-shadow: 5px 5px 13px -6px var(--textColor);
+            box-shadow: 5px 5px 13px -6px var(--textColor);
+        }
+
+        h1 {
+            color: var(--textStrong);
+        }
+
+        h3 {
+            margin: .5rem 0;
+            color: var(--textColor);
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: var(--textColor);
+            margin: 0 .5rem;
+        }
+
+        a:hover {
+            color: var(--textStrong);
+        }
+
+        figure {
+            height: 50vh;
+            width: 5vh;
+            opacity: .75;
+            position: absolute;
+            background-color: var(--textStrong);
+        }
+
+        figure.top {
+            top: 0;
+            left: 0;
+        }
+
+        figure.bottom {
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img src="johnywalves.jpg" />
+        <h1>Johny W. Alves</h1>
+        <h3>Fullstack Developer, Data Scientist, Runner and PC Gamer</h3>
+        <div>
+            <a href="https://johnywalves.com.br" target="_blank"><i class="fas fa-globe-americas"></i></a>
+            <a href="https://johnywalves.com.br/blog/" target="_blank"><i class="fas fa-book"></i></i></a>
+            <a href="https://linkedin.com/in/johnywalves" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/johnywalves" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/johnywalves" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </main>
+    <figure class="top"></figure>
+    <figure class="bottom"></figure>
+</body>
+
+</html>
