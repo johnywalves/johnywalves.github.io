@@ -13,12 +13,21 @@
             padding: 0;
             margin: 0;
             border: none;
+            transition: all .5s ease-in-out;
         }
 
-        html {
+        body {
             --bgColor: #fafafa;
+            --bgFigures: #d23669;
             --textStrong: #d23669;
             --textColor: #6c6c6c;
+        }
+
+        body.dark {
+            --bgColor: #6c6c6c;
+            --bgFigures: #d23669;
+            --textStrong: #fafafa;
+            --textColor: #fafafa;
         }
 
         body {
@@ -26,6 +35,7 @@
             text-align: center;
             height: 100vh;
             background-color: var(--bgColor);
+            transition: all 1s ease-in-out;
         }
 
         main {
@@ -66,7 +76,7 @@
             width: 5vh;
             opacity: .75;
             position: absolute;
-            background-color: var(--textStrong);
+            background-color: var(--bgFigures);
         }
 
         figure.top {
@@ -92,12 +102,21 @@
             <a href="https://linkedin.com/in/johnywalves" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/johnywalves" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/johnywalves" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2547980J8&idiomaExibicao=2" target="_blank"><i class="fas fa-university"></i></a>
+            <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2547980J8&idiomaExibicao=2"
+                target="_blank"><i class="fas fa-university"></i></a>
             <a href="mailto:contato@johnywalves.com.br" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </main>
     <figure class="top"></figure>
     <figure class="bottom"></figure>
 </body>
+
+<script>
+    window.onload = function () {
+        document.querySelector("body").addEventListener("dblclick", function () {
+            document.querySelector("body").classList.toggle("dark");
+        });
+    }
+</script>
 
 </html>
