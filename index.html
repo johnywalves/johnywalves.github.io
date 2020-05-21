@@ -45,11 +45,18 @@
             transform: translate(-50%, -50%);
         }
 
-        img {
-            border-radius: 50%;
+        picture {
+            display: inline-block;
             -webkit-box-shadow: 5px 5px 13px -6px var(--textColor);
             -moz-box-shadow: 5px 5px 13px -6px var(--textColor);
             box-shadow: 5px 5px 13px -6px var(--textColor);
+        }
+
+        picture,
+        img {
+            border-radius: 50%;
+            height: 160px;
+            width: 160px;
         }
 
         h1 {
@@ -93,7 +100,9 @@
 
 <body>
     <main>
-        <img src="johnywalves.jpg" />
+        <picture>
+            <img src="johnywalves.jpg" loading="lazy" alt="foto" />
+        </picture>
         <h1>Johny W. Alves</h1>
         <h3>Fullstack Developer, Data Scientist, Runner and PC Gamer</h3>
         <div>
