@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#ed34a2" />
+
     <title>Johny W. Alves</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
@@ -13,19 +16,19 @@
             padding: 0;
             margin: 0;
             border: none;
-            transition: all .5s ease-in-out;
+            transition: all 0.25s;
         }
 
         body {
             --bgColor: #fafafa;
-            --bgFigures: #d23669;
-            --textStrong: #d23669;
+            --bgFigures: #e0138c;
+            --textStrong: #e0138c;
             --textColor: #6c6c6c;
         }
 
         body.dark {
             --bgColor: #6c6c6c;
-            --bgFigures: #d23669;
+            --bgFigures: #e0138c;
             --textStrong: #fafafa;
             --textColor: #fafafa;
         }
@@ -35,7 +38,13 @@
             text-align: center;
             height: 100vh;
             background-color: var(--bgColor);
-            transition: all 1s ease-in-out;
+            transition: all 0.25s;
+
+            background: url("./triangle-wall-top.svg"), url("./triangle-wall-bottom.svg");
+            background-color: var(--bgColor);
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-position: top left, bottom right;
         }
 
         main {
@@ -55,23 +64,27 @@
         picture,
         img {
             border-radius: 50%;
-            height: 160px;
-            width: 160px;
+            height: 320px;
+            width: 320px;
         }
 
         h1 {
             color: var(--textStrong);
+            font-size: 3.5rem;
+            
         }
 
         h3 {
-            margin: .5rem 0;
+            margin: 1rem 0 2rem;
             color: var(--textColor);
+            font-size: 1.25rem;
         }
 
         a {
-            font-size: 1.5rem;
+            margin: 0 0.75rem;
             color: var(--textColor);
-            margin: 0 .5rem;
+            font-size: 2rem;
+            transition: all 0.25s;
         }
 
         a:hover {
@@ -81,7 +94,7 @@
         figure {
             height: 50vh;
             width: 5vh;
-            opacity: .75;
+            opacity: 0.75;
             position: absolute;
             background-color: var(--bgFigures);
         }
@@ -101,10 +114,10 @@
 <body>
     <main>
         <picture>
-            <img src="johnywalves.jpg" loading="lazy" alt="foto" />
+            <img src="johnywalves.png" loading="lazy" alt="foto" />
         </picture>
         <h1>Johny W. Alves</h1>
-        <h3>Fullstack Developer, Data Scientist, Runner and PC Gamer</h3>
+        <h3>Web Developer, Data Scientist, Biker and Gamer</h3>
         <div>
             <a href="https://johnywalves.com.br" target="_blank"><i class="fas fa-globe-americas"></i></a>
             <a href="https://johnywalves.com.br/blog/" target="_blank"><i class="fas fa-book"></i></i></a>
