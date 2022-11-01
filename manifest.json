@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "Johny W. Alves | Web Developer",
+    "short_name": "Johny W. Alves",
+    "description": "Web Developer, Data Scientist, Biker and Gamer",
+    "display": "fullscreen",
+    "background_color": "#fafafa",
+    "theme_color": "#e0138c",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/images/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }

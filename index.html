@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,10 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#ed34a2" />
 
-    <title>Johny W. Alves</title>
+    <title>Johny W. Alves | Web Developer</title>
+    <meta name="title" property="og:title" content="Johny W. Alves | Web Developer" />
+    <meta name="description" property="og:description" content="Web Developer, Data Scientist, Biker and Gamer" />
+    <meta name="image" property="og:image" itemprop="image" content="/images/thumbnail.jpg" />
+    <meta name="type" property="og:type" content="website" />
+    <meta name="url" property="og:url" content="https://johnywalves.github.io/" />
+    <meta name="site_name" property="og:site_name" content="Johny W. Alves | Web Developer" />
+    <meta name="locale" property="og:locale" content="en" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://johnywalves.github.io/"" />
+    <meta name=" twitter:title" content="Johny W. Alves | Web Developer" />
+    <meta name="twitter:description" content="Web Developer, Data Scientist, Biker and Gamer" />
+    <meta name="twitter:image" content="https://johnywalves.github.io/images/thumbnail.jpg" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="/images/icon-192.png" type="image/png" />
+    <link rel="manifest" href="manifest.json" />
+
     <style>
         * {
             padding: 0;
@@ -23,11 +41,11 @@
             --bgColor: #fafafa;
             --bgFigures: #e0138c;
             --textStrong: #e0138c;
-            --textColor: #282828;
+            --textColor: #363636;
         }
 
         body.dark {
-            --bgColor: #282828;
+            --bgColor: #363636;
             --bgFigures: #e0138c;
             --textStrong: #fafafa;
             --textColor: #fafafa;
@@ -59,6 +77,7 @@
             -webkit-box-shadow: 5px 5px 13px -6px var(--textColor);
             -moz-box-shadow: 5px 5px 13px -6px var(--textColor);
             box-shadow: 5px 5px 13px -6px var(--textColor);
+            margin: 0 0 2rem;
         }
 
         picture,
@@ -71,10 +90,9 @@
         h1 {
             color: var(--textStrong);
             font-size: 3.5rem;
-            
         }
 
-        h3 {
+        h2 {
             margin: 1rem 0 2rem;
             color: var(--textColor);
             font-size: 1.25rem;
@@ -93,8 +111,8 @@
 
         figure {
             height: 50vh;
-            width: 5vh;
-            opacity: 0.75;
+            width: 3vw;
+            opacity: 0.7;
             position: absolute;
             background-color: var(--bgFigures);
         }
@@ -114,10 +132,10 @@
 <body>
     <main>
         <picture>
-            <img src="johnywalves.png" loading="lazy" alt="foto" />
+            <img src="/images/johnywalves.png" loading="lazy" alt="foto" />
         </picture>
         <h1>Johny W. Alves</h1>
-        <h3>Web Developer, Data Scientist, Biker and Gamer</h3>
+        <h2>Web Developer, Data Scientist, Biker and Gamer</h2>
         <div>
             <a href="https://johnywalves.com.br" target="_blank"><i class="fas fa-globe-americas"></i></a>
             <a href="https://johnywalves.com.br/blog/" target="_blank"><i class="fas fa-book"></i></i></a>
